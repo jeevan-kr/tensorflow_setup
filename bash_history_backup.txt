@@ -1,0 +1,190 @@
+cd Downloads/
+lw
+ls
+chmod 777 NVIDIA-Linux-x86_64-367.57.run 
+sudo ./NVIDIA-Linux-x86_64-367.57.run --no-x-check
+pwd
+ls
+cd Downloads/
+ls
+chmod 776 Anaconda2-4.2.0-Linux-x86_64.sh 
+chmod 777 Anaconda2-4.2.0-Linux-x86_64.sh 
+./Anaconda2-4.2.0-Linux-x86_64.sh 
+which python
+echo $PATH
+which conda
+which bazel
+g++
+g++ --verion
+g++ --verdion
+g++ --version
+computecpp
+sudo apt-get install computecpp
+cd Downloads/
+ls
+gunzip ComputeCpp-CE-0.1-Ubuntu.14.04-64bit.tar.gz 
+tar xvf ComputeCpp-CE-0.1-Ubuntu.14.04-64bit.tar 
+ls /usr/local/cuda
+sudo mkdir /usr/local/computecpp
+sudo ComputeCpp-CE-0.1-Linux/lib /usr/local/computecpp/
+sudo mv ComputeCpp-CE-0.1-Linux/lib /usr/local/computecpp/
+sudo mv ComputeCpp-CE-0.1-Linux/include /usr/local/computecpp/
+sudo mv ComputeCpp-CE-0.1-Linux/bin /usr/local/computecpp/
+sudo mv ComputeCpp-CE-0.1-Linux/api_pages /usr/local/computecpp/
+sudo mv ComputeCpp-CE-0.1-Linux/doc /usr/local/computecpp/
+ls ComputeCpp-CE-0.1-Linux/
+apt-get install bazel
+sudo apt-get install bazel
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get -f install oracle-java8-installer
+sudo apt-get -f install 
+sudo apt-get install oracle-java8-installer
+sudo apt install oracle-java8-set-default
+java -version
+sudo apt-get install software-properties-common
+echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install bazel
+sudo apt-get upgrade bazel
+which python
+which conda
+pwd
+mkdir deve
+rm -r deve/
+rm -r deve
+mkdir dev
+cd dev/
+ls
+ls -al
+mkdir tf
+conda create -n tf python=2.7
+source activate tf
+pwd
+cd tf/
+pip install TensorFlow
+jupyter notebook
+pip install jupyter
+jupyter notebook
+echo $LD_LIBRARY_PATH
+echo LD_LIBRARY_PATH
+echo $PATH
+echo LD_LIBRARY_PATH=/user/local/cuda/lib64
+echo $LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/user/local/cuda/lib64
+echo $LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda
+jupyter notebook
+source deactivate tf
+cd ..
+cd tf2/
+source activate tf2
+pip install jupyter
+jupyter notebook
+xinput list | cut -f2 | cut -f2 -d'=' | xargs -d $'\n' -I'{}' sh -c "xinput list-props '{}' | grep -iq scroll && (echo Listing dev id '{}'; xinput list-props '{}')"
+uname -a
+gcc -version
+sudo apt-get install gcc
+gcc -v
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt-get install cuda
+sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb - See more at: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu-installation
+lspci | grep -i nvidia
+uname -m && cat /etc/*release
+gcc --version
+sudo dpkg -i cuda-repo-xenial_16.04_x86_64.deb - See more at: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu-installation
+sudo dpkg -i cuda-repo-ubuntu1604_6.5-14_amd64.deb 
+sudo dpkg -i cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
+cd ~/Downloads/
+sudo dpkg -i cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
+source activate tf
+pwd
+ls
+cd ..
+cd dev/
+cd tf/
+ls
+which python
+python
+source deactivate
+ls
+cd ..
+mkdir tf2
+cd tf
+cd ..
+cd tf2
+conda create -n tf2 python=2.7
+source activate tf2
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+sudo apt install git
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+source deactivate tf2
+cd ~/Downloads/
+sudo dpkg -i libcudnn5-dev_5.1.5-1+cuda8.0_ppc64el.deb 
+sudo dpkg -i libcudnn5-dev_5.1.5-1+cuda8.0_amd64.deb 
+su
+sudo mkdir /usr/local/cudnn
+pwd
+ls
+gunzip cudnn-8.0-linux-x64-v5.1.tgz 
+ls
+tar xvf cudnn-8.0-linux-x64-v5.1.tar 
+sudo mv cuda/include/cudnn.h /usr/local/cuda/include/
+mv cuda/lib64/libcudnn* /usr/local/cuda/lib64/
+sudo mv cuda/lib64/libcudnn* /usr/local/cuda/lib64/
+sudo dpkg -i libcudnn5-dev_5.1.5-1+cuda8.0_amd64.deb 
+echo $LC_LIBRARY_PATH
+echo $LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+sudo dpkg -i libcudnn5-dev_5.1.5-1+cuda8.0_amd64.deb 
+export CUDA_HOME=/usr/local/cuda
+sudo dpkg -i libcudnn5-dev_5.1.5-1+cuda8.0_amd64.deb 
+sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+source activate tf2
+cd ..
+cd dev/tf2/
+pwd
+ls
+cd tensorflow/
+ls
+./configure 
+pip install numpy
+./configure 
+bazel build -c opt --config=cuda //tensorflow/cc:tutorials_example_trainer
+python
+cd ..
+python
+cd tensorflow/
+bazel-bin/tensorflow/cc/tutorials_example_trainer --use_gpu
+pwd
+ls
+cd tensorflow/models/image/mnist/
+python convolutional.py 
+pip install siz
+pip install six
+python convolutional.py 
+cd ..
+bazel build -c opt //tensorflow/tools/pip_package:build_pip_package
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+pip install /tmp/tensorflow_pkg/
+pip install /tmp/tensorflow_pkg/tensorflow-0.11.0rc2-cp27-cp27mu-linux_x86_64.whl 
+python
+cd ..
+python
+cp /tmp/tensorflow_pkg/tensorflow-0.11.0rc2-cp27-cp27mu-linux_x86_64.whl .
+ls -al
+
+echo "git clone --recurse-submodules https://github.com/tensorflow/tensorflow" >> tf_setup.txt
+echo "bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package" >> tf_setup.txt 
+echo "bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg" >> tf_setup.txt 
+echo "pip install /tmp/tensorflow_pkg/tensorflow-0.11.0rc2-cp27-cp27mu-linux_x86_64.whl" >> tf_setup.txt 
+cat tf_setup.txt 
+cd ..
+mkdir libs
+cp tf2/tensorflow-0.11.0rc2-cp27-cp27mu-linux_x86_64.whl libs/
+clear
+pwd
+source deactivate tf2
